@@ -5,3 +5,5 @@
 3. Run the database migrations to create all necessary tables in your database.
 
 4. Start the Laravel development server and build the frontend assets to properly load Tailwind CSS.
+
+5. I used a JSON file for state, city, and country as of now. State and city have been  added only for India 
