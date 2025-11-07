@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
+            $table->string('company_logo')->nullable(); // store file name or path
+            $table->string('company_name');
+            $table->string('email')->unique();
+            $table->string('mobile', 20);
+            $table->json('services')->nullable(); // multiple selected services
+            $table->string('country')->nullable();
+            $table->string('state')->nullable();
+            $table->string('city')->nullable();
+            $table->json('branch')->nullable(); // multiple branches
+
             $table->timestamps();
         });
     }
